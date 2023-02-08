@@ -1,0 +1,37 @@
+body {
+	background-color: black;
+	overflow: hidden;
+}
+
+.render-time {
+	position: fixed;
+	bottom: 0;
+	padding: 6px;
+	opacity: 0.75;
+	color: white;
+	font-family: monospace;
+	font-size: 10px;
+	user-select: none;
+}
+
+.toggle-btn {
+	position: fixed;
+	top: 0;
+	min-width: 120px;
+	padding: 6px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	font-size: 12px;
+	text-align: left;
+	letter-spacing: 0.03em;
+	user-select: none;
+	
+	&::after {
+		content: 'Click to Toggle';
+		display: block;
+		font-size: 11px;
+		opacity: 0.5;
+	}
+}
